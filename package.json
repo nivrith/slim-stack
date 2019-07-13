@@ -8,7 +8,13 @@
   "author": "Nivrith <nivrithgomatam@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "slim-stack"
+    "stack",
+    "create-stack",
+    "stackjs",
+    "js-stack",
+    "slim-stack",
+    "queue",
+    "first-in-last-out"
   ],
   "scripts": {
     "compile": "npm run clean && tsc -b",
@@ -22,7 +28,7 @@
     "trace": "tsc -b && node --trace-deopt --trace-opt --runtime_call_stats --trace_ic --trace_ic",
     "devtools": "node --inspect --inspect-brk",
     "benchmark": "tsc -b && node",
-    "changelog": "npx auto-changelog"
+    "changelog": "npx auto-changelog && git add ."
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
