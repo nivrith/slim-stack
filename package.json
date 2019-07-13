@@ -1,6 +1,6 @@
 {
   "name": "slim-stack",
-  "version": "1.1.1",
+  "version": "0.0.0",
   "description": "stack implementation for JavaScript",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -14,14 +14,15 @@
     "compile": "npm run clean && tsc -b",
     "start": "yarn compile && node dist/src/index",
     "test": "nyc mocha --require ts-node/register test/**/*.spec.ts",
-    "prepublishOnly": "npm run compile",
+    "prepublishOnly": "npm run compile && npm run changelog",
     "pretest": "npm run clean && npm run compile",
     "clean": "del-cli dist",
     "release": "npx np",
     "docs": "typedoc src",
     "trace": "tsc -b && node --trace-deopt --trace-opt --runtime_call_stats --trace_ic --trace_ic",
     "devtools": "node --inspect --inspect-brk",
-    "benchmark": "tsc -b && node"
+    "benchmark": "tsc -b && node",
+    "changelog": "npx auto-changelog"
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
@@ -49,6 +50,7 @@
     "@types/mocha": "^5.2.7",
     "@types/ora": "^3.2.0",
     "@types/typescript": "^2.0.0",
+    "auto-changelog": "^1.14.1",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "cli-table2": "^0.2.0",

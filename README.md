@@ -17,9 +17,25 @@ stack implementation for JavaScript
 
 ```js
 
-  import slimStack from 'slim-stack';
+  import SlimStack from 'slim-stack';
 
-  slimStack(); // hello universe
+  // Empty stack
+  let stack = new SlimStack(); //creates empty stack
+
+  stack.push(6); // Pushes 6 to top of the stack
+  stack.pop(); // Removes the top most element of the stack and returns it
+  stack.peek(); // Returns the top most element of the stack without removing it
+  stack.size(); // Returns the size of the stack
+
+  // Or create a stack from an array
+  // last element of array will be top most element of the stack
+
+  stack = new SlimStack([1,2,3,4,5]);
+
+  stack.push(6);
+  stack.pop(); // returns 6
+  stack.peek(); // returns 5
+  stack.size(); // returns 5
 
 ```
 
