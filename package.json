@@ -1,6 +1,6 @@
 {
   "name": "slim-stack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "stack implementation for JavaScript",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
