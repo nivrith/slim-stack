@@ -20,7 +20,7 @@
     "compile": "npm run clean && tsc -b",
     "start": "yarn compile && node dist/index",
     "test": "nyc mocha --require ts-node/register test/**/*.spec.ts",
-    "prepublishOnly": "npm run compile && npm run changelog",
+    "prepublishOnly": "npm run compile",
     "pretest": "npm run clean && npm run compile",
     "clean": "del-cli dist",
     "release": "npx np",
