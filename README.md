@@ -1,9 +1,9 @@
 # slim-stack
 
-[![CircleCI](https://circleci.com/gh/slim-stack/slim-stack/tree/master.svg?style=svg)](https://circleci.com/gh/slim-stack/slim-stack/tree/master)
+[![CircleCI](https://circleci.com/gh/nivrith/slim-stack/tree/master.svg?style=svg)](https://circleci.com/gh/slim-stack/slim-stack/tree/master)
 [![NPM Downloads](https://img.shields.io/npm/dw/slim-stack.svg)](https://www.npmjs.com/package/slim-stack)
 [![node](https://img.shields.io/node/v/slim-stack.svg)](https://www.npmjs.com/package/slim-stack)
-[![License MIT](https://img.shields.io/github/license/slim-stack/slim-stack.svg)](https://github.com/nivrith/slim-stack/blob/master/LICENSE)
+[![License MIT](https://img.shields.io/github/license/nivrith/slim-stack.svg)](https://github.com/nivrith/slim-stack/blob/master/LICENSE)
 
 stack implementation for JavaScript
 

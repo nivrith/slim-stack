@@ -2,8 +2,8 @@
   "name": "slim-stack",
   "version": "1.0.2",
   "description": "stack implementation for JavaScript",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/nivrith/slim-stack",
   "author": "Nivrith <nivrithgomatam@gmail.com>",
   "license": "MIT",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "compile": "npm run clean && tsc -b",
-    "start": "yarn compile && node dist/src/index",
+    "start": "yarn compile && node dist/index",
     "test": "nyc mocha --require ts-node/register test/**/*.spec.ts",
     "prepublishOnly": "npm run compile && npm run changelog",
     "pretest": "npm run clean && npm run compile",
@@ -42,7 +42,7 @@
     "check-coverage": true
   },
   "files": [
-    "dist/src/**/*"
+    "dist/**/*"
   ],
   "dependencies": {},
   "engines": {
