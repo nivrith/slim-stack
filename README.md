@@ -11,6 +11,12 @@ stack implementation for JavaScript
 
 - Written in Typescript
 
+- Iterable using for...of statement
+
+- follows LIFO model (Last in first out)
+
+- Iterate top to bottom
+
 ## Usage
 
 > stack implementation for JavaScript
@@ -36,6 +42,21 @@ stack implementation for JavaScript
   stack.pop(); // returns 6
   stack.peek(); // returns 5
   stack.size(); // returns 5
+
+  ### Iteration
+
+  Slim Stack follows the iterator and iterable protocols making it an iterable type. Which means you can use
+  the for...of statement to iterate over elements of  the stack from top to bottom.
+
+  for (let item of stack) {
+    console.log(item);
+  }
+
+  //5
+  //4
+  //3
+  //2
+  //1
 
 ```
 
