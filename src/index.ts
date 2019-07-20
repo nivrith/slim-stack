@@ -80,4 +80,13 @@ export class SlimStack <T> {
     return this.stack[this.length - 1];
   }
 
+  /**
+   *
+   *
+   * @memberof SlimStack
+   */
+  public *[Symbol.iterator]() {
+    yield* [...this.stack].reverse();
+  }
+
 }
